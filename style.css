@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.stopwatch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 190px;
+  width: 650px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 1),
+    0px 0px 10px rgba(255, 255, 255, 1), 0px 0px 15px rgba(255, 255, 255, 1),
+    0px 0px 20px rgba(73, 255, 24, 1), 0px 0px 30px rgba(73, 255, 24, 1),
+    0px 0px 40px rgba(73, 255, 24, 1), 0px 0px 55px rgba(73, 255, 24, 1),
+    0px 0px 75px rgba(73, 255, 24, 1);
+  box-shadow: rgba(205, 205, 162, 0.25) 0px -30px 60px -12px inset,
+    rgba(255, 255, 255, 0.3) 0px -18px 36px -18px inset;
+  border-radius: 150px;
+  /* margin-top: -300px; */
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #314755 0%,
+    #26a0da 51%,
+    #314755 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.lap {
+  margin: 50px;
+  color: white;
+  overflow: scroll;
+  height: 150px;
+  width: 650px;
+}
+
+.lap {
+  width: 600px;
+  height: 800px;
+  overflow: auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+/* Hidden scrollbars */
+.lap::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+/* Scrollable content */
+.lap h2 {
+  padding: 5px;
+  font-size: 2.5rem;
+  border-bottom: 2px dashed white;
+  margin: 0 35px 0 35px;
+}
